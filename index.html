@@ -1,84 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TotalCalc | 50+ Precision Calculators for Math, Finance, Health & Life</title>
-    <meta name="description" content="Free, precision-engineered online calculators for everything. From Mortgage to BMR, Quadratic to Dog Age. Multilingual support in English, Spanish, Mandarin, and Hindi. No Pro tiers, 100% free.">
-    
-    <!-- Favicon & Touch Icons -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEyOCIgZmlsbD0iIzNiODJmNiIvPjxwYXRoIGQ9Ik0xMjggMTI4aDI1NnY4MEgxMjh6IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNCIvPjxyZWN0IHg9IjEyOCIgeT0iMjQwIiB3aWR0aD0iMTEyIiBoZWlnaHQ9IjgwIiByeD0iMjAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii40Ii8+PHJlY3QgeD0iMjcyIiB5PSIyNDAiIHdpZHRoPSIxMTIiIGhlaWdodD0iODAiIHJ4PSIyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjQiLz48cmVjdCB4PSIxMjgiIHk9IjM1MiIgd2lkdGg9IjExMiIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Ik0zMDAgMzkyaDg0TTM0MiAzNTB2ODQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+">
-    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEyOCIgZmlsbD0iIzNiODJmNiIvPjxwYXRoIGQ9Ik0xMjggMTI4aDI1NnY4MEgxMjh6IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNCIvPjxyZWN0IHg9IjEyOCIgeT0iMjQwIiB3aWR0aD0iMTEyIiBoZWlnaHQ9IjgwIiByeD0iMjAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii40Ii8+PHJlY3QgeD0iMjcyIiB5PSIyNDAiIHdpZHRoPSIxMTIiIGhlaWdodD0iODAiIHJ4PSIyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjQiLz48cmVjdCB4PSIxMjgiIHk9IjM1MiIgd2lkdGg9IjExMiIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Ik0zMDAgMzkyaDg0TTM0MiAzNTB2ODQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+">
-    <meta name="theme-color" content="#0ea5e9">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- BASIC -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Multilingual SEO -->
-    <link rel="alternate" hreflang="en" href="https://totalcalcs.netlify.app/" />
-    <link rel="alternate" hreflang="es" href="https://totalcalcs.netlify.app/es" />
-    <link rel="alternate" hreflang="zh" href="https://totalcalcs.netlify.app/zh" />
-    <link rel="alternate" hreflang="hi" href="https://totalcalcs.netlify.app/hi" />
+  <!-- TITLE (VERY IMPORTANT FOR SEO) -->
+  <title>TotalCalc – 50+ Free Online Calculators for Math, Finance, Health & Life</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59S5NK84GF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-59S5NK84GF');
-    </script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: {
-                        primary: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1' }
-                    }
-                }
+  <!-- META DESCRIPTION -->
+  <meta
+    name="description"
+    content="TotalCalc offers 50+ free, fast, and accurate online calculators. From Mortgage, BMR, BMI, Quadratic, Percentages, Dog Age and more. No signup, no paywalls, 100% free."
+  />
+
+  <!-- SEARCH ENGINE -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- CANONICAL (CRITICAL) -->
+  <link rel="canonical" href="https://totalcalcs.netlify.app/" />
+
+  <!-- FAVICON (THIS FIXES GOOGLE ISSUE) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- OPEN GRAPH (GOOGLE + SOCIAL) -->
+  <meta property="og:title" content="TotalCalc – Free Online Calculators" />
+  <meta
+    property="og:description"
+    content="50+ precision calculators for math, finance, health and daily life. Fast, clean and free."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://totalcalcs.netlify.app/" />
+  <meta property="og:image" content="https://totalcalcs.netlify.app/og-image.png" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TotalCalc – Free Online Calculators" />
+  <meta
+    name="twitter:description"
+    content="Use 50+ free online calculators for finance, math, health & more."
+  />
+
+  <!-- MULTI-LANGUAGE -->
+  <link rel="alternate" hreflang="en" href="https://totalcalcs.netlify.app/" />
+  <link rel="alternate" hreflang="es" href="https://totalcalcs.netlify.app/es" />
+  <link rel="alternate" hreflang="zh" href="https://totalcalcs.netlify.app/zh" />
+  <link rel="alternate" hreflang="hi" href="https://totalcalcs.netlify.app/hi" />
+  <link rel="alternate" hreflang="x-default" href="https://totalcalcs.netlify.app/" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "sans-serif"] },
+          colors: {
+            primary: {
+              500: "#0ea5e9",
+              600: "#0284c7",
+              700: "#0369a1"
             }
+          }
         }
-    </script>
-    <style>
-        body { transition: background-color 0.3s ease, color 0.3s ease; }
-        html { scroll-behavior: smooth; }
-        .dark body { background-color: #020617; color: #f8fafc; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
-        .dark .glass { background: rgba(15, 23, 42, 0.7); }
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
+      }
+    };
+  </script>
 
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
+  <!-- GOOGLE ANALYTICS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-59S5NK84GF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-59S5NK84GF");
+  </script>
+
+  <!-- STRUCTURED DATA (VERY IMPORTANT) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TotalCalc",
+    "url": "https://totalcalcs.netlify.app/",
+    "description": "Free online calculators for math, finance, health and life.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://totalcalcs.netlify.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
-}
-</script>
+  </script>
 
-<link rel="stylesheet" href="/index.css">
+  <!-- ADS (KEEPING YOURS) -->
+  <script src="https://pl28429217.effectivegatecpm.com/26/a3/2c/26a32c1c2123d9f3bca545d16355b9e3.js"></script>
 
-    <!-- Adsterra Social Banner -->
-    <script src="https://pl28429217.effectivegatecpm.com/26/a3/2c/26a32c1c2123d9f3bca545d16355b9e3.js"></script>
+  <!-- STYLES -->
+  <style>
+    html { scroll-behavior: smooth; }
+    body { transition: background-color .3s, color .3s; }
+  </style>
+
+  <!-- REACT IMPORTMAP -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@19",
+      "react-dom": "https://esm.sh/react-dom@19"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/index.css" />
 </head>
 
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+  <div id="root"></div>
 
-    <!-- Adsterra Native Banner (at the bottom) -->
-    <div class="w-full mt-8 px-4">
-        <script async="async" data-cfasync="false" src="https://pl28431730.effectivegatecpm.com/7905acf4e7d1d22c1f212e412e78b94f/invoke.js"></script>
-        <div id="container-7905acf4e7d1d22c1f212e412e78b94f"></div>
-    </div>
+  <!-- MAIN APP -->
+  <script type="module" src="/index.tsx"></script>
+
+  <!-- BOTTOM AD -->
+  <div class="w-full mt-8 px-4">
+    <script async data-cfasync="false" src="https://pl28431730.effectivegatecpm.com/7905acf4e7d1d22c1f212e412e78b94f/invoke.js"></script>
+    <div id="container-7905acf4e7d1d22c1f212e412e78b94f"></div>
+  </div>
 </body>
 </html>
